@@ -87,8 +87,9 @@ public class StreamFilter {
      */ //TODO
     public Person[] toArrayMultiLine() {
         return personStream
-                .filter(person -> person.getName().substring(0, 2).equals(startingCharacter))
+                .filter(person -> person.getName().substring(0,2).equals(startingCharacter))
                 .toArray(Person[]::new);
+
     }
 
 }
